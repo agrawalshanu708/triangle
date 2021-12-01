@@ -11,12 +11,14 @@
      padding: 1rem 1rem;
      border-bottom-left-radius: 1rem;
  }
+
  .navigation .link {
    text-decoration: none;
    color: white;
    padding: 0.5rem;
  }
 
+ 
  .heading {
    margin-top: 2rem;
    text-align: center
