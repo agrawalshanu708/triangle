@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="navigation">
+        <ul class="inline-elements">
+          <li> <a class="link" href="/index.html">Is triangle</a></li>
+  
+          <li>  <a class="link" href="/area.html">Area</a></li>
+          <li> <a class="link" href="/hypo.html">Hypotenuse</a></li>
+          <li>  <a class="link" href="/quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+  
+    <h1 class="heading">Lets check your understanding with triangles</h1>
+    
+  <form class="quiz-form">
+    <div class="question-container">
+      <p>If a triangle has an angle of 90 degree, what is it called? </p>
+    <label >
+      <input type="radio" value="acute" name="question1">acute
+    </label>
+    <label>
+      <input type="radio" value="obtuse" name="question1">obtuse
+    </label>
+    <label >
+      <input type="radio" name="question1" value="right-angled">right-angled
+    </label>
+    </div>
+  
+    <div class="question-container">
+      <p>What is the third angle for the triangle where angle1 = 45degree and angle2 = 45degree </p>
+    <label >
+      <input type="radio" value="fourtyfive" name="question2">fourtyfive
+    </label>
+    <label>
+      <input type="radio" value="sixty" name="question2">sixty
+    </label>
+    <label >
+      <input type="radio" name="question2" value="ninety">ninety
+    </label>
+    </div>
+  
+    <div class="question-container">
+      <p>What is an "acute" angle?  </p>
+    <label >
+      <input type="radio" value="Angle that measure 180" name="question3">Angle that measure 180
+    </label>
+    <label>
+      <input type="radio" value="Angle that measure 90" name="question3">Angle that measure 90
+    </label>
+    <label >
+      <input type="radio" name="question3" value="Angle that measure less than 90">Angle that measure < 90
+    </label>
+    </div>
+  
+    <div class="question-container">
+      <p>What is an "obtuse" angle? </p>
+    <label >
+      <input type="radio" value="Angle that measure 180" name="question4">Angle that measure 180
+    </label>
+    <label>
+      <input type="radio" value="Angle that measure 90" name="question4">Angle that measure 90
+    </label>
+    <label >
+      <input type="radio" name="question4" value="Angle that measure more than 90">Angle that measure > 90
+    </label>
+    </div>
+  
+     <div class="question-container">
+      <p>What is reflex angle?  </p>
+    <label >
+      <input type="radio" value="angle between 180 & 360" name="question5">angle between 180 & 360 
+    </label>
+    <label>
+      <input type="radio" value="angle between 90 &360" name="question5">angle between 90 &360 
+    </label>
+    <label >
+      <input type="radio" name="question5" value="angle between 0 & 270">angle between 0 & 270 
+    </label>
+    </div>
+  
+  </form><br> 
+  <button id="submit-button">Submit </button>
+  <div id="output-div"></div>
+
+
+
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
