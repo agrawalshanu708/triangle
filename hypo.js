@@ -1,18 +1,15 @@
-var baseTriangle = document.querySelector("#base-triangle")
-var perTriangle = document.querySelector("#per-triangle")
-var checkBtn = document.querySelector("#check-button")
-var outputDiv = document.querySelector("#output-div")
+const baseTriangle = document.querySelector("#base-triangle")
+const perTriangle = document.querySelector("#per-triangle")
+const checkBtn = document.querySelector("#check-button")
+const outputDiv = document.querySelector("#output-div")
 
 checkBtn.addEventListener("click", function calculate(){
-  var hypo = calculateHypo(baseTriangle.value, perTriangle.value)
+  let hypo = calculateHypo(baseTriangle.value, perTriangle.value)
   
   outputDiv.innerText = "hypotenuse "+hypo
 })
 
 function calculateHypo (x,y){
-  x = Math.floor(x);
-  y= Math.floor(y)
-  var z = (x*x) + (y*y)
-  var z = Math.sqrt(z)
+  let z = Math.sqrt(Math.floor(x)*Math.floor(x) + Math.floor(y)*Math.floor(y))
   return z;
 }

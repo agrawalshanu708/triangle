@@ -2,16 +2,20 @@
     --primary-color: #0369A1;
    
      --primary-dark: #1f2937;
-  
-
 }
- .navigation {
+body{
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+nav {
      background-color: var(--primary-color);
      color: white;
      padding: 1rem 1rem;
      border-bottom-left-radius: 1rem;
  }
- .navigation .link {
+
+ nav .link {
    text-decoration: none;
    color: white;
    padding: 0.5rem;
@@ -23,16 +27,7 @@
    color: var(--primary-color)
  }
 
- 
-
-body{
-  background-color: var(--primary-dark);
-  color: white;
-}
-
-
-
-#submit-button {
+ #submit-button {
   display: block;
   margin: auto;
   margin-top: 1rem;

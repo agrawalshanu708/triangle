@@ -2,16 +2,20 @@
     --primary-color: #0369A1;
    
      --primary-dark: #1f2937;
-  
-
 }
- .navigation {
+
+body{
+  background-color: var(--primary-dark);
+  color: var(--primary-color)
+}
+
+ nav {
      background-color: var(--primary-color);
      color: white;
      padding: 1rem 1rem;
      border-bottom-left-radius: 1rem;
  }
- .navigation .link {
+ nav .link {
    text-decoration: none;
    color: white;
    padding: 0.5rem;
@@ -22,24 +26,14 @@
    text-align: center
  }
 
- 
-
-body{
-  background-color: var(--primary-dark);
-  color: var(--primary-color)
-}
-
-.container{
-  
+section{
   margin: auto;
   width: 50%;
-  
- }
+}
+
 .heading {
 margin: 2rem;
 text-align: center;
-
-
 }
 
 input,label{
