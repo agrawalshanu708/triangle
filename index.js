@@ -5,15 +5,23 @@ const checkButton = document.querySelector("#check-button")
 const outputDiv = document.querySelector("#output-div")
 
 checkButton.addEventListener("click",function clickHandler(){
-  let su = sumOfAngles(angleOne.value, angleTwo.value, angleThree.value)
-  
-  if(su === 180){
-    outputDiv.innerText = "yahh, triangle works"
-  }else if (su === 0) {
-    outputDiv.innerText = "enter vailid value"
-  }else{
-    outputDiv.innerText = "nope, check value once again"
 
+  let a1 = angleOne.value;
+  let a2 = angleTwo.value;
+  let a3 = angleThree.value;
+
+  if(a1>0 && a2>0 && a3>0){
+
+    let s = sumOfAngles(a1, a2, a3)
+  
+  if(s === 180){
+    outputDiv.innerText = "yahh, Triangle works"
+  }else{
+    outputDiv.innerText = "NO, Triangle can't be formed"
+
+  }
+  }else {
+    outputDiv.innerText = "Invalid entry"
   }
 })
 

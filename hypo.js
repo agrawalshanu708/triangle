@@ -4,9 +4,18 @@ const checkBtn = document.querySelector("#check-button")
 const outputDiv = document.querySelector("#output-div")
 
 checkBtn.addEventListener("click", function calculate(){
-  let hypo = calculateHypo(baseTriangle.value, perTriangle.value)
-  
+
+let bt = baseTriangle.value;
+let pt = perTriangle.value;
+
+if(bt>0 && pt>0){
+
+  let hypo = calculateHypo(bt, pt)
   outputDiv.innerText = "hypotenuse "+hypo
+
+}else{
+  outputDiv.innerText = "Invalid Entry, please check the value once again"
+}
 })
 
 function calculateHypo (x,y){
